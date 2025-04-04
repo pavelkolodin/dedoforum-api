@@ -107,7 +107,7 @@ Server return `false` in `ok` field of responce. Also field `error` contains err
 
 # Examples
 
-## Example method Foo Bar
+## `foo bar` method
 
 Request:
 
