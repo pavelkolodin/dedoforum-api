@@ -37,10 +37,10 @@ These fields applied to all methods.
 
 Return list of forums.
 
-
-### Request params
-
-Common fields only.
+```json
+// use common parameters
+{}
+```
 
 ### Response fields
 
