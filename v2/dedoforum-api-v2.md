@@ -66,9 +66,10 @@ Response:
       "time-ban-remove" : -1
    }
 }
+```
 
 State object:
-```
+
 | Name | Type | Comment |
 | :---- | :---- | :---- |
 | forum | string | forum id |
