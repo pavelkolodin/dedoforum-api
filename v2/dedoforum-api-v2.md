@@ -22,20 +22,21 @@ Token is a string to identify client. To get your token go to your Simple Commun
 
 Token example: `12345-67890-12345-67890`
 
-# Common fields for all methods
+# Common fields
 
-These fields applied to all methods.
+These fields must present in all requests
 
 | Name | Type | Comment | Optional |
 | :---- | :---- | :---- | :---- |
 | `api_token` | string | Your token | |
-| `language` | string | Language | YES |
+| `id` | string | Request id. Maximum 16 bytes. Latin only. Server must return this id in response to a request. This allows client (in theory; implementation may not support this) to send several requests in parallel in single connection and get responses in any order and match them with requests. Also this guarantees server sent not some cached response. | |
+| `language` | string | Language. | YES |
 
 # Methods
 
 ## `get_forum_list`
 
-Return list of forums.
+Return list of forums with properties of each forum.
 
 Request:
 ```json
