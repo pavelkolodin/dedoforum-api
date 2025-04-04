@@ -7,18 +7,7 @@
 
 ## Requirements
 
-All methods works via `HTTP` `GET` or `POST` methods and the request body sent as a `JSON` in body of `HTTP` request.
-
-Example:
-
-```
-GET /forum/api/v2/get_forum_list HTTP/1.1
-Host: nosql.ru
-Content-Type: application/json
-Content-Length: 12345
-
-{"api_token" : "1234567890abcdef", "param" : 1, "foo-bar" : false}
-```
+All methods works via `HTTP` `GET` or `POST` methods and the request body sent as a `JSON` in body of `HTTP` request. See examples section at the end of document.
 
 ## Common fields for all methods
 
