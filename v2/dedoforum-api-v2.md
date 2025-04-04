@@ -1,19 +1,17 @@
 
-# Dedoforum API v2
-
-## Endpoint format
+# Endpoint format
 
 `https://nosql.ru/forum/api/v2/METHOD_NAME`
 
-## Requirements
+# Requirements
 
 All methods works via `HTTP` `GET` or `POST` methods and the request body sent as a `JSON` in body of `HTTP` request. See examples section at the end of document.
 
-## Token
+# Token
 
 Token is a string to identify client. To get your token go to... and press the button [ahahaha].
 
-## Common fields for all methods
+# Common fields for all methods
 
 These fields applied to all methods.
 
@@ -21,6 +19,8 @@ These fields applied to all methods.
 | :---- | :---- | :---- | :---- |
 | `api_token` | string | Your token | |
 | `language` | string | Language | YES |
+
+# Methods
 
 ## `get_forum_list`
 
