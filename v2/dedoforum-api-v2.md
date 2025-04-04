@@ -3,7 +3,8 @@
 2. [Requirements](#Requirements)
 3. [Token](#Token)
 4. [Methods](#Methods)
-5. [Examples](#Examples)
+5. [Errors](#Errors)
+6. [Examples](#Examples)
 
 
 # URL
@@ -94,6 +95,14 @@ Forum object:
 ## `delete_posts`
 
 ## `restore_posts`
+
+# Errors
+Server return `false` in `ok` field of responce. Also field `error` contains error code (integer). Optional field `text` contains error message. Example:
+```{
+  "ok" : false,
+  "error" : 11,
+  "text" : "Too many requests per second"
+}```
 
 # Examples
 Some examples here.
