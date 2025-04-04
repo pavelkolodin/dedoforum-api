@@ -43,13 +43,10 @@ These fields must present in all requests
 
 Return list of forums with properties of each forum.
 
-Request:
-```json
-// use common parameters
-{}
-```
+Request must contain only [Common fields](#Common_fields). No special fields needed in this method.
+
 Response:
-```
+```json
 {
   "ok" : true,
   "forums" : {
