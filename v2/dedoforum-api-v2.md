@@ -22,6 +22,8 @@ Token is a string to identify client. To get your token go to your Simple Commun
 
 Token example: `12345-67890-12345-67890`
 
+**WARNING!!!! TODO for Deda**: replace this dashed numbers with some hex or string value like `sha256(something)`, example: `703cfa2585a735f8213a886546b7120a02ca3564d6a98d4d3469d35f5b88ad75`. Current API token is too weak and short!
+
 # Common fields
 
 These fields must present in all requests
