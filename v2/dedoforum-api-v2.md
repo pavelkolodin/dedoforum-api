@@ -47,20 +47,25 @@ Response:
 {
   "ok" : true,
   "forums" : {
-    "forum-id-1" : {
+    "8" : {
+      // Forum object
       "title" : "Форум рулеза и турбования",
       "description" : "Форум рулеза, трубования, кочевглыжества и цуфлепропермахерства с оттенком волынских пучеров",
       "threads" : 12345,
       "last-message" : 1782716237
-    },
-    ...
-    },
-    "forum-id-2" : {
-      /// ...
     }
   }
 }
 ```
+
+Forum object:
+| Name | Type | Comment |
+| :---- | :---- | :---- |
+| title | string | Forum title |
+| description | string | Forum description |
+| threads | int | Number of threads in this forum |
+| last message | int | Timestamp of last message |
+
 
 
 
