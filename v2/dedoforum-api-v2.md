@@ -40,6 +40,17 @@ These fields must present in all requests
 | `id` | string | Request id. Hex value. Len: 1...16 bytes. Hex latin symbols only [0-9a-FA-F]. Server must return this id in response to a request. This allows client (in theory; implementation may not support this) to send several requests in parallel in single connection and get responses in any order and match them with requests. Also this guarantees server sent not some cached response. Example: `adef8197fefeaaaa`| |
 | `language` | string | Language. | YES |
 
+Example:
+```json
+{
+  "token" : "fead8008deadbeef55aa55aa",
+  "id" : "7162534FFA",
+  "language" : "RU",
+  // other parameters for specific method
+}
+```
+
+
 # Methods
 
 ## `get_state`
