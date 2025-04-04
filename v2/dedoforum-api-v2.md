@@ -5,38 +5,65 @@
 
 `https://nosql.ru/forum/api/v2/METHOD_NAME`
 
-## Methods
+## Requirements
 
-### Requirements
+All methods works via `HTTP` `GET` or `POST` methods and the request body sent as a `JSON` in body of `HTTP` request.
 
-All methods works via `HTTP` `GET` or `POST` methods and the request body sent as a `JSON` in body of `HTTP` request. Example:
+Example:
 
-```json
-HTTP/1.1 GET /forum/api/v2/get_forum_list
+```
+GET /forum/api/v2/get_forum_list HTTP/1.1
 Host: nosql.ru
-Content-Length: 100
+Content-Length: 12345
 
 {"api_token" : "1234567890abcdef", "param" : 1, "foo-bar" : false}
 ```
 
+## Common fields for all methods
 
-### Common fields for all methods
-
-These fields applied to all methods. **bold** field is mandatory, *italic* is optional.
+These fields applied to all methods.
 
 | Name | Type | Comment | Optional |
 | :---- | :---- | :---- | :---- |
 | `api_token` | string | Your token | |
 | `language` | string | Language | YES |
 
-### `get_forum_list`
+## `get_forum_list`
 
 Return list of forums.
 
-Request params:
+
+### Request params
+
+Common fields only.
+
+### Response fields
 
 | Name | Type | Comment | Optional |
-| ---- | ---- | ---- | ---- |
-| 
+| :---- | :---- | :---- | :---- |
+| `a` | string | comment |  |
+| `b` | string | comment |  |
+| `c` | bool | comment | YES |
 
-```
+
+
+
+## `get_topic_list`
+
+## `get_post_list`
+
+## `get_post`
+
+## `get_user_data`
+
+## `get_attachment`
+
+## `post_message`
+
+## `update_message`
+
+## `post_attachment`
+
+## `delete_posts`
+
+## `restore_posts`
