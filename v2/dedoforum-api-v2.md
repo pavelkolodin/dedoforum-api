@@ -42,11 +42,50 @@ These fields must present in all requests
 
 # Methods
 
+## `get_state`
+
+Return the current status of this user for the specified forum, such as ban status, permissions, and so on. Use case: user want to create thread and want to know how many time he must wait before it can do so. This is `tactical` parameters of user, not consistent long-term parameters stored in profile. These parameters depend on current state of forum, short-term user behaviour or forum load.
+
+Request:
+```json
+{
+  "forum" : "id123"
+}
+```
+
+Response:
+```json
+{
+  "ok" : true,
+  "state" : {
+      // State object
+      "forum" : "id123",
+      "read" : true,
+      "write" : true,
+      "time-next-thread" : 61,
+      "time-ban-remove" : -1
+   }
+}
+
+State object:
+```
+| Name | Type | Comment |
+| :---- | :---- | :---- |
+| forum | string | forum id |
+| read | bool | read access to forum `forum` |
+| write | bool | write access to forum `forum` |
+| time-next-thread | int | seconds until client can create thread (in example above: 61 seconds remaining) |
+| time-ban-remove | int | seconds before ban will be removed from this user on forum `forum`; (-1 mean NEVER - example shows banned user) |
+
+
+
+## `get_user`
+
 ## `get_forum_list`
 
 Return list of forums with properties of each forum.
 
-Request must contain only [Common fields](#common-fields). No special fields needed in this method.
+Request: [Common fields](#common-fields) ONLY
 
 Response:
 ```json
