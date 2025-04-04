@@ -107,7 +107,7 @@ GET /forum/api/v2/get_fortune_members_callbacks_hehehe HTTP/1.1
 Host: nosql.ru
 Content-Length: 12345
 
-{"api_token" : "1234567890abcdef", "id" : "cadecadec7168", "param" : 2, "foo-bar-bazz" : null}
+{"token" : "1234567890abcdef", "id" : "cadecadec7168", "param" : 2, "foo-bar-bazz" : null}
 ```
 
 ### Response
@@ -118,5 +118,5 @@ Content-Type: application/json
 Content-Length: 1234
 Connection: keep-alive
 
-{"ok" : true}
+{"ok" : true, "value" : "Dinnahu"}
 ```
