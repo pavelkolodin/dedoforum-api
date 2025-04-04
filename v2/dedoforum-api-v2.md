@@ -62,7 +62,7 @@ Response:
       "forum" : "id123",
       "read" : true,
       "write" : true,
-      "time-next-thread" : 61,
+      "time-next-thread" : 1761716231,
       "time-ban-remove" : -1
    }
 }
@@ -75,12 +75,36 @@ State object:
 | forum | string | forum id |
 | read | bool | read access to forum `forum` |
 | write | bool | write access to forum `forum` |
-| time-next-thread | int | seconds until client can create thread (in example above: 61 seconds remaining) |
-| time-ban-remove | int | seconds before ban will be removed from this user on forum `forum`; (-1 mean NEVER - example shows banned user) |
+| time-next-thread | int | timestamp when new thread can be created. Return 0 if user can create thread NOW. |
+| time-ban-remove | int | timestamp ban will be removed from this user on forum `forum`; (-1 mean NEVER - example shows banned user) |
 
 
 
 ## `get_user`
+
+Get profile data for specified user.
+
+Request:
+```json
+```
+
+Response:
+```json
+{
+   "ok" : true,
+   "user" : {
+      "id" : 81,
+      "gender" : "male",
+      "age" : 51,
+      "nickname" : "Гарыныч",
+      "city" : "Москва",
+      "avatar" : "file-id",
+      "time-registered" : 172817234,
+      "time-last-seen" : 172817234,
+      "time-ban-remove" : 176251623,    // OPTIONAL
+   }
+}
+```
 
 ## `get_forum_list`
 
