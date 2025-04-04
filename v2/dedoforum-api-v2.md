@@ -3,9 +3,9 @@
 2. [Requirements](#Requirements)
 3. [Token](#Token)
 4. [Methods](#Methods)
-5. - asdaa
-   - asasd
-   - asdasd
+5. - [get_state](#get_state)
+   - [get_user](#get_user)
+   - [get_forum_list](#get_forum_list)
 6. [Errors](#Errors)
 7. [Examples](#Examples)
 
