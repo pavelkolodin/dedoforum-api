@@ -46,7 +46,7 @@ These fields must present in all requests
 
 Return the current status of this user for the specified forum, such as ban status, permissions, and so on. Use case: user want to create thread and want to know how many time he must wait before it can do so. This is *tactical* parameters of user related to specific forum, not consistent *long-term parameters* stored in profile. These parameters depend on current state of forum, short-term user behaviour or forum load.
 
-Request:
+Request (+ [Common fields](#common-fields) )
 ```json
 {
   "forum" : "id123"
@@ -86,6 +86,7 @@ Get profile data for specified user.
 
 Request:
 ```json
+TODO
 ```
 
 Response:
