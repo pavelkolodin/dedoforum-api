@@ -1,8 +1,9 @@
 # Table of Contents
-1. [URL](#URL-endpoint-format)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+1. [URL and Endpoint format](#URL)
+2. [Requirements](#Requirements)
+3. [Token](#Token)
+4. [Methods](#Methods)
+5. [Examples](#Examples)
 
 
 # URL
