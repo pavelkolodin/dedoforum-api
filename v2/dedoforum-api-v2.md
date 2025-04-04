@@ -3,7 +3,7 @@
 
 API endpoint format is following:
 
-`https://nosql.ru/forum/api/v2/METHOD_NAME`
+https://nosql.ru/forum/api/v2/METHOD_NAME
 
 # Requirements
 
