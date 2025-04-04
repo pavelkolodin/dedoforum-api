@@ -106,11 +106,10 @@ Server return `false` in `ok` field of responce. Also field `error` contains err
 ```
 
 # Examples
-Some examples here.
 
 ## Example method Foo Bar
 
-### Request
+Request:
 
 ```
 GET /forum/api/v2/get_fortune_members_callbacks_hehehe HTTP/1.1
@@ -120,7 +119,7 @@ Content-Length: 12345
 {"token" : "1234567890abcdef", "id" : "cadecadec7168", "param" : 2, "foo-bar-bazz" : null}
 ```
 
-### Response
+Response:
 
 ```
 HTTP/1.1 200 OK
