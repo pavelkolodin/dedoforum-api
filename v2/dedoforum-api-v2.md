@@ -106,9 +106,8 @@ Response:
    "ok" : true,
    "user" : {
       "id" : 81,
-      "gender" : "male",
-      "age" : 51,
       "nickname" : "Гарыныч",
+      "motto" : "Я встану, ты ляжешь, запомни это! ГОРОД ГЕРОЙ МОСКВА!!!!",
       "city" : "Москва",
       "avatar" : "file-id",
       "time-registered" : 172817234,
