@@ -11,7 +11,9 @@ All methods works via `HTTP` `GET` or `POST` methods and the request body sent a
 
 # Token
 
-Token is a string to identify client. To get your token go to... and press the button [ahahaha].
+Token is a string to identify client. To get your token go to your Simple Communicator user profile and press the button [ahahaha] then copy your token from text field.
+
+Token example: `12345-67890-12345-67890`
 
 # Common fields for all methods
 
