@@ -14,6 +14,7 @@ Example:
 ```
 GET /forum/api/v2/get_forum_list HTTP/1.1
 Host: nosql.ru
+Content-Type: application/json
 Content-Length: 12345
 
 {"api_token" : "1234567890abcdef", "param" : 1, "foo-bar" : false}
@@ -67,3 +68,29 @@ Common fields only.
 ## `delete_posts`
 
 ## `restore_posts`
+
+# Examples
+Some examples here.
+
+## Method Foo Bar
+
+### Request
+
+```
+GET /forum/api/v2/get_fortune_members_callbacks_hehehe HTTP/1.1
+Host: nosql.ru
+Content-Length: 12345
+
+{"api_token" : "1234567890abcdef", "param" : 2, "foo-bar-bazz" : null}
+```
+
+### Response
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1234
+Connection: keep-alive
+
+{"ok" : true}
+```
