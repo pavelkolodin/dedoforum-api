@@ -44,7 +44,7 @@ These fields must present in all requests
 
 ## `get_state`
 
-Return the current status of this user for the specified forum, such as ban status, permissions, and so on. Use case: user want to create thread and want to know how many time he must wait before it can do so. This is `tactical` parameters of user, not consistent long-term parameters stored in profile. These parameters depend on current state of forum, short-term user behaviour or forum load.
+Return the current status of this user for the specified forum, such as ban status, permissions, and so on. Use case: user want to create thread and want to know how many time he must wait before it can do so. This is *tactical* parameters of user related to specific forum, not consistent *long-term parameters* stored in profile. These parameters depend on current state of forum, short-term user behaviour or forum load.
 
 Request:
 ```json
