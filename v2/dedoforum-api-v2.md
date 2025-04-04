@@ -98,10 +98,11 @@ Forum object:
 
 # Errors
 Server return `false` in `ok` field of responce. Also field `error` contains error code (integer). Optional field `text` contains error message. Example:
-```{
+```json
+{
   "ok" : false,
   "error" : 11,
-  "text" : "Too many requests per second"
+  "text" : "Too many requests per second"    // OPTIONAL
 }
 ```
 
