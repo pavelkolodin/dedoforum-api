@@ -43,7 +43,7 @@ These fields must present in all requests
 
 Return list of forums with properties of each forum.
 
-Request must contain only [Common fields](#Common_fields). No special fields needed in this method.
+Request must contain only [Common fields](#common-fields). No special fields needed in this method.
 
 Response:
 ```json
