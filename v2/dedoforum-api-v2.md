@@ -29,7 +29,7 @@ These fields must present in all requests
 | Name | Type | Comment | Optional |
 | :---- | :---- | :---- | :---- |
 | `api_token` | string | Your token | |
-| `id` | string | Request id. Hex value. Len: 1...16 bytes. Hex latin symbols only [0-9a-FA-F]. Server must return this id in response to a request. This allows client (in theory; implementation may not support this) to send several requests in parallel in single connection and get responses in any order and match them with requests. Also this guarantees server sent not some cached response. | |
+| `id` | string | Request id. Hex value. Len: 1...16 bytes. Hex latin symbols only [0-9a-FA-F]. Server must return this id in response to a request. This allows client (in theory; implementation may not support this) to send several requests in parallel in single connection and get responses in any order and match them with requests. Also this guarantees server sent not some cached response. Example: `adef8197fefeaaaa`| |
 | `language` | string | Language. | YES |
 
 # Methods
