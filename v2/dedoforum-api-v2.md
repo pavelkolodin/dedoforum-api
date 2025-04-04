@@ -9,6 +9,10 @@
 
 All methods works via `HTTP` `GET` or `POST` methods and the request body sent as a `JSON` in body of `HTTP` request. See examples section at the end of document.
 
+## Token
+
+Token is a string to identify client. To get your token go to... and press the button [ahahaha].
+
 ## Common fields for all methods
 
 These fields applied to all methods.
