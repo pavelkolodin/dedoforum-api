@@ -37,18 +37,30 @@ These fields applied to all methods.
 
 Return list of forums.
 
+Request:
 ```json
 // use common parameters
 {}
 ```
-
-### Response fields
-
-| Name | Type | Comment | Optional |
-| :---- | :---- | :---- | :---- |
-| `a` | string | comment |  |
-| `b` | string | comment |  |
-| `c` | bool | comment | YES |
+Response:
+```
+{
+  "ok" : true,
+  "forums" : {
+    "forum-id-1" : {
+      "title" : "Форум рулеза и турбования",
+      "description" : "Форум рулеза, трубования, кочевглыжества и цуфлепропермахерства с оттенком волынских пучеров",
+      "threads" : 12345,
+      "last-message" : 1782716237
+    },
+    ...
+    },
+    "forum-id-2" : {
+      /// ...
+    }
+  }
+}
+```
 
 
 
