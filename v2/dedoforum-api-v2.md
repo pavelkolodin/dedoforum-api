@@ -24,6 +24,8 @@ Token example: `12345-67890-12345-67890`
 
 **WARNING!!!! TODO for Deda**: replace this dashed numbers with some hex or string value like `sha256(something)`, example: `703cfa2585a735f8213a886546b7120a02ca3564d6a98d4d3469d35f5b88ad75`. Current API token is too weak and short!
 
+Example Telegram token format: `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11` -- larger than 128 bits!
+
 # Common fields
 
 These fields must present in all requests
