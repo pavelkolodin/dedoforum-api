@@ -102,7 +102,8 @@ Server return `false` in `ok` field of responce. Also field `error` contains err
   "ok" : false,
   "error" : 11,
   "text" : "Too many requests per second"
-}```
+}
+```
 
 # Examples
 Some examples here.
